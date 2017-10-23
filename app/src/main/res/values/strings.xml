@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">CelularesR</string>
+    <string name="Numero">Numero</string>
+    <string name="marca">marca</string>
+    <string name="color">color</string>
+    <string name="ram">ram</string>
+    <string name="precio">precio</string>
+    <string name="titulo">titulo</string>
+    <string name="guardar">guardar</string>
+    <string name="limpiar">limpiar</string>
+    <string name="Ram">Ram</string>
+    <string name="reporte1">R1 - Samsung con RAM de 2 a 4 GB</string>
+    <string name="reporte2">R2 - iPhone negros</string>
+    <string name="reporte3">R3 - Precio promedio de Nokia</string>
+    <string name="crear_celulares">Crear</string>
+    <string name="listar_celulares">Listar</string>
+    <string-array name="opciones">
+        <item>@string/crear_celulares</item>
+        <item>@string/listar_celulares</item>
+        <item>@string/reporte1</item>
+        <item>@string/reporte2</item>
+        <item>@string/reporte3</item>
+    </string-array>
+    <string name="negro">Negro</string>
+    <string name="rojo">Rojo</string>
+    <string name="blanco">Blanco</string>
+    <string name="azul">Azul</string>
+    <string-array name="colores">
+        <item>@string/negro</item>
+        <item>@string/rojo</item>
+        <item>@string/blanco</item>
+        <item>@string/azul</item>
+    </string-array>
+    <string name="samsung">Samsung</string>
+    <string name="nokia">Nokia</string>
+    <string name="apple">iPhone</string>
+    <string name="huawei">Huawei</string>
+    <string-array name="marcas">
+        <item>@string/samsung</item>
+        <item>@string/nokia</item>
+        <item>@string/apple</item>
+        <item>@string/huawei</item>
+    </string-array>
+    <string name="mensaje_guardado">Celular Guardado Exitosamente!</string>
+</resources>
