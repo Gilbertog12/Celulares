@@ -7,13 +7,15 @@ package com.example.gilbertogalindo.celularesr;
 public class Celular {
     private int marca;
     private int color;
-    private double capacidadRAM;
+    private int sistema;
+    private double RAM;
     private double precio;
 
-    public Celular(int marca, int color, double capacidadRAM, double precio) {
+    public Celular(int marca, int color, int sistema, double RAM, double precio) {
         this.marca = marca;
         this.color = color;
-        this.capacidadRAM = capacidadRAM;
+        this.sistema = sistema;
+        this.RAM = RAM;
         this.precio = precio;
     }
 
@@ -33,12 +35,20 @@ public class Celular {
         this.color = color;
     }
 
-    public double getCapacidadRAM() {
-        return capacidadRAM;
+    public int getSistema() {
+        return sistema;
     }
 
-    public void setCapacidadRAM(double capacidadRAM) {
-        this.capacidadRAM = capacidadRAM;
+    public void setSistema(int sistema) {
+        this.sistema = sistema;
+    }
+
+    public double getRAM() {
+        return RAM;
+    }
+
+    public void setRAM(double RAM) {
+        this.RAM = RAM;
     }
 
     public double getPrecio() {
@@ -48,6 +58,7 @@ public class Celular {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
     public void guardar(){
         Datos.guardarCelulares(this);
     }

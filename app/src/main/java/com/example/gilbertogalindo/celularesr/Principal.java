@@ -32,6 +32,7 @@ public class Principal extends AppCompatActivity {
         contexto = this;
         color = res.getStringArray(R.array.colores);
 
+
         opc = res.getStringArray(R.array.opciones);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, opc);
 
@@ -49,18 +50,18 @@ public class Principal extends AppCompatActivity {
                         startActivity(i);
                         break;
                     case 2:
-                        ArrayList<Celular> celulares = Metodos.marca_samsung_2_a_4_ram(Datos.obtenerCelulares());
+                        ArrayList<Celular> celulares = Metodos.ram_Samsung(Datos.obtenerCelulares());
                         String mostrar = "";
-                        for (int j = 0; j < celulares.size(); j++) {
-                            mostrar += "[" + color[celulares.get(j).getColor()] + ", " + celulares.get(j).getCapacidadRAM() + ", " + celulares.get(j).getPrecio()+ "]";
+                        for (int i = 0; i < celulares.size(); i++) {
+                            mostrar += "[" + color[celulares.get(i).getColor()] + ", " + celulares.get(i).getRAM() + ", " + celulares.get(i).getPrecio()+ "]";
                         }
                         Toast.makeText(contexto, mostrar, Toast.LENGTH_LONG).show();
                         break;
                     case 3:
-                        Toast.makeText(contexto, Metodos.cuantos_apples_negros(Datos.obtenerCelulares())+"", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(contexto, Metodos.apples_negros(Datos.obtenerCelulares())+"", Toast.LENGTH_SHORT).show();
                         break;
                     case 4:
-                        Toast.makeText(contexto, Metodos.precio_promedio_nokias(Datos.obtenerCelulares())+"", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(contexto, Metodos.promedio_nokias(Datos.obtenerCelulares())+"", Toast.LENGTH_SHORT).show();
                         break;
                 }
             }
